@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Paint Multiplayer</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.1.1/socket.io.dev.js"></script>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=K2D" rel="stylesheet">
+</head>
+
+<body>
+    <style id="ceses">
+        body
+        {
+            cursor: default;
+        }
+    </style>
+
+    <header>
+        <div>Copyright: Aleksander Cieśla 2018</div> <a>Welcome to PAINT MULTIPLAYER</a> <img src="Paintico.png"><img src="zsti.png" style="right: 10px; top: 10px; position: fixed;">
+    </header>
+        <div id="toolbox">
+            <button id="black" onclick="changeColor('black')"></button>
+            <button id="white" onclick="changeColor('white')"></button>
+            <button id="gray" onclick="changeColor('dimgray')"></button>
+            <button id="red" onclick="changeColor('#f00')"></button>
+            <button id="purple" onclick="changeColor('purple')"></button>
+            <button id="orange" onclick="changeColor('orange')"></button>
+            <button id="yellow" onclick="changeColor('yellow')"></button>
+            <button id="green" onclick="changeColor('green')"></button>
+            <button id="blue" onclick="changeColor('blue')"></button>
+            <button id="navy" onclick="changeColor('navy')"></button>
+            <button id="pink" onclick="changeColor('deeppink')"></button>
+            <button id="brown" onclick="changeColor('brown')"></button>
+            
+            <button id="tekst" onclick="tekst = true; document.getElementById('ceses').innerHTML='body {cursor: text;}';">TEKST</button>
+
+            <button id="clear" onclick="czyscCanvas()">CLEAR</button>
+            
+            
+        </div>
+        
+        <span id="plotno">
+            <canvas id="canvas" width="500px" height="500px"></canvas>
+        </span>
+            
+        
+    <script src="http://localhost:8080/JSPaint/paint.js"></script>
+   
+
+</body>
+
+</html>

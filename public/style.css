@@ -1,0 +1,98 @@
+body
+{
+    font-family: 'K2D', sans-serif;
+    margin: 0;
+    height: 100vh;
+}
+body *
+{
+    user-select: none;
+}
+
+::selection
+{
+    background-color: transparent;
+}
+
+header
+{
+    width: 100vw;
+    font-size: 40px;
+    text-align: center;
+}
+
+header img
+{
+    height: 40px;
+}
+button
+{
+    display: block;
+    width: 50px;
+    height: 50px;
+    border-radius: 15px;
+    transition: all 0.08s ease-in;
+    outline: 0;
+    border: 1px #444 solid;
+    margin-bottom: 2px;
+    user-select: none;
+}
+
+button:active
+{
+    transform: scale(0.9);
+    border-radius: 6px;
+}
+
+button:nth-of-type(odd)
+{
+    float: left;
+    margin-right: 2px;
+}
+
+#clear, #tekst
+{
+    width: 100px;
+    background-color: black;
+    font-size: 1.5em;
+    color: white;
+    margin-top: 50px;
+    clear: both;
+}
+
+#toolbox, #canvas
+{
+    //border: 1px solid #000;
+    float: left;
+}
+header div
+{
+    color: #444;
+    font-size: 0.4em;
+    float: left;
+    position: fixed;
+}
+
+
+#black { background-color: black; }
+#white { background-color: white; }
+#gray { background-color: dimgray; }
+#red { background-color: red; }
+#purple { background-color: mediumpurple; }
+#orange { background-color: orange; }
+#yellow { background-color: yellow;
+}
+#green { background-color: green; }
+#blue { background-color: blue; }
+#navy { background-color: navy; }
+#pink { background-color: deeppink; }
+#brown { background-color: brown; }
+
+
+@media (max-width: 1040px)
+{
+    header
+    {
+        font-size: 25px;
+    }
+}
